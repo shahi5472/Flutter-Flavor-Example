@@ -10,11 +10,10 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: F.title,
       theme: ThemeData(
-        primarySwatch:
-            F.currentFlavour == Flavor.DEV ? Colors.blue : Colors.deepPurple,
+        primarySwatch: Colors.blue,
       ),
       home: _flavorBanner(
-        child: const MyHomePage(),
+        child: MyHomePage(),
         show: kDebugMode,
       ),
     );
@@ -26,16 +25,17 @@ class App extends StatelessWidget {
   }) =>
       show
           ? Banner(
-              child: child,
-              location: BannerLocation.topEnd,
-              message: F.name,
-              color: Colors.green.withOpacity(0.6),
-              textStyle: const TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 12.0,
-                letterSpacing: 1.0,
-              ),
-              textDirection: TextDirection.ltr,
-            )
-          : child;
+        child: child,
+        location: BannerLocation.topStart,
+        message: F.name,
+        color: Colors.green.withOpacity(0.6),
+        textStyle: TextStyle(
+            fontWeight: FontWeight.w700,
+            fontSize: 12.0,
+            letterSpacing: 1.0),
+        textDirection: TextDirection.ltr,
+      )
+          : Container(
+        child: child,
+      );
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "778843809169",
+    "project_id": "fir-app-prod-2de94",
+    "storage_bucket": "fir-app-prod-2de94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778843809169:android:66dec3ad36d8bcd6a2a630",
+        "android_client_info": {
+          "package_name": "com.shahi.flutter_flavor.prod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778843809169-cutpdglbn9veuf0mnvile7mltqfjobrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH4ovRN7nVKqWmvKtyJRb0lbFmfsREVQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778843809169-cutpdglbn9veuf0mnvile7mltqfjobrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

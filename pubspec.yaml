@@ -52,6 +52,8 @@ flavorizr:
 
       android:
         applicationId: "com.shahi.flutter_flavor.prod"
+        firebase:
+          config: "/Users/shahi/Desktop/Flutter Projects/flutter_flavor_example/config/android/prod/google-services.json"
 
       ios:
         bundleId: "com.shahi.flutter_flavor.prod"
@@ -62,5 +64,8 @@ flavorizr:
 
       android:
         applicationId: "com.shahi.flutter_flavor.dev"
+        firebase:
+          config: "/Users/shahi/Desktop/Flutter Projects/flutter_flavor_example/config/android/dev/google-services.json"
+
       ios:
         bundleId: "com.shahi.flutter_flavor.dev"

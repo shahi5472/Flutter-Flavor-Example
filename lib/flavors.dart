@@ -8,8 +8,6 @@ class F {
 
   static String get name => appFlavor?.name ?? '';
 
-  static Flavor get currentFlavour => appFlavor!;
-
   static String get title {
     switch (appFlavor) {
       case Flavor.PROD:
