@@ -7,5 +7,5 @@ void main() async{
   F.appFlavor = Flavor.DEV;
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(App());
+  runApp(const App());
 }

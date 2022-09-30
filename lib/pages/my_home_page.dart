@@ -7,17 +7,10 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CollectionReference reference =
-        FirebaseFirestore.instance.collection("users");
+    final reference = FirebaseFirestore.instance.collection("users");
     return Scaffold(
-      appBar: AppBar(
-        title: Text(F.title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello ${F.title}',
-        ),
-      ),
+      appBar: AppBar(title: Text(F.title)),
+      body: Center(child: Text('Hello ${F.title}')),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
@@ -27,8 +20,8 @@ class MyHomePage extends StatelessWidget {
                 'full_name': F.title,
                 'mode': F.currentFlavor.name,
               })
-              .then((value) => print("User Added"))
-              .catchError((error) => print('Error: => $error'));
+              .then((value) => debugPrint("User Added"))
+              .catchError((error) => debugPrint('Error: => $error'));
         },
       ),
     );
